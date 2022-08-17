@@ -1,0 +1,6 @@
+[submodule "package/msdx321/vlmcsd/luci-app-vlmcsd"]
+	path = package/msdx321/vlmcsd/luci-app-vlmcsd
+	url = https://github.com/cokebar/luci-app-vlmcsd.git
+[submodule "package/msdx321/vlmcsd/openwrt-vlmcsd"]
+	path = package/msdx321/vlmcsd/openwrt-vlmcsd
+	url = https://github.com/cokebar/openwrt-vlmcsd.git
