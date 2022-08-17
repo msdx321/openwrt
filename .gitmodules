@@ -4,3 +4,6 @@
 [submodule "package/msdx321/vlmcsd/openwrt-vlmcsd"]
 	path = package/msdx321/vlmcsd/openwrt-vlmcsd
 	url = https://github.com/cokebar/openwrt-vlmcsd.git
+[submodule "package/msdx321/nft-fullcone"]
+	path = package/msdx321/nft-fullcone
+	url = https://github.com/fullcone-nat-nftables/nft-fullcone.git
