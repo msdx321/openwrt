@@ -1,0 +1,27 @@
+From 73bfa372f61c0db034c414d415e92cf98ad56a76 Mon Sep 17 00:00:00 2001
+From: msdx321 <msdx321@gmail.com>
+Date: Thu, 22 Sep 2022 13:57:23 -0400
+Subject: [PATCH] Ignore UUID check
+
+Signed-off-by: msdx321 <msdx321@gmail.com>
+---
+ block.c | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/block.c b/block.c
+index 40c52a0..c464711 100644
+--- a/block.c
++++ b/block.c
+@@ -1445,6 +1445,9 @@ static int check_extroot(char *path)
+ 	FILE *fp;
+ 	int err;
+ 
++	/* Ignore UUID check */
++	return 0;
++
+ 	err = find_block_mtd("\"rootfs\"", devpath, sizeof(devpath));
+ #ifdef UBIFS_EXTROOT
+ 	if (err) {
+-- 
+2.25.1
+
