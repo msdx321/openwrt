@@ -24,6 +24,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           path: "openwrt"
+          submodules: 'recursive'
 
       - name: Fix permission
         run: |
@@ -36,7 +37,7 @@ jobs:
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
-      - name: Configuration Customization - 750Gr3
+      - name: Configuration Customization - E8450
         shell: su buildbot -c "sh -e {0}"
         working-directory: openwrt
         env:
