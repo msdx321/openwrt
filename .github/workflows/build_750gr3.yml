@@ -4,10 +4,6 @@ on:
   release:
     types: [published]
 
-  push:
-    branches:
-      - stable
-
   schedule:
     - cron: 0 0 * * 0
 
